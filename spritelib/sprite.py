@@ -287,6 +287,8 @@ def _parse_header(fp):
         if small_size != size_dummy[-1] and not store_size_dummy:
             store_size_dummy = True
 
+        size_dummy[-1] = struct.pack('<H', size_dummy[-1])
+
     del offsets[-1]
 
     fp.seek(0xbcc)
