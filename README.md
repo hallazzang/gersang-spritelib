@@ -7,7 +7,7 @@ Compile [`cspritelib.c`](spritelib/cspritelib.c) and build C extension for bette
 Basic Usage
 -----------
 Convert sprite file(with `.spr` extension) to bitmap files.
-```
+```python
 from spritelib.sprite import open_sprite
 
 magicball = open_sprite('./example_sprites/magicball.spr')
@@ -20,7 +20,7 @@ sprite.save_dir('./output/magicball')
 ```
 
 Convert bitmap files to sprite file.
-```
+```python
 from spritelib.sprite import open_sprite
 
 magicball = open_sprite('./output/magicball')
