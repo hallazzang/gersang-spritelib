@@ -13,10 +13,10 @@ from spritelib.sprite import open_sprite
 magicball = open_sprite('./example_sprites/magicball.spr')
 
 # print sprite informations
-print 'width: {} pixels, height: {} pixels'.format(sprite.width, sprite.height)
-print 'frame count: {}'.format(sprite.frame_count)
+print 'width: {} pixels, height: {} pixels'.format(magicball.width, magicball.height)
+print 'frame count: {}'.format(magicball.frame_count)
 
-sprite.save_dir('./output/magicball')
+magicball.save_dir('./output/magicball')
 ```
 
 Convert bitmap files to sprite file.
@@ -24,7 +24,7 @@ Convert bitmap files to sprite file.
 from spritelib.sprite import open_sprite
 
 magicball = open_sprite('./output/magicball')
-sprite.save_file('./output/magicball.spr')
+magicball.save_file('./output/magicball.spr')
 ```
 
 That's it.
