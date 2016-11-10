@@ -22,12 +22,15 @@ MODE_DIR = 1
 class Sprite(object):
     def __init__(self, mode, width, height, frame_count):
         self._mode = mode
+
         self.width = width
         self.height = height
         self.frame_count = frame_count
+
         self.uk_1 = None
         self.uk_2 = None
         self.size_dummy = None
+
         self.frames = None
 
     def __del__(self):
